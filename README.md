@@ -58,14 +58,13 @@ The process for navigating through the environment can be summarized as follows.
 <img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/53d2b175-d015-4925-b6fc-96629cf6ed69"alt="ROI" width="200"/>
 </p>
 
-## VI. Results
-Raw 2D Depths
+## Raw 2D Depth Results
 https://github.com/raj-anadkat/DepthNav/assets/109377585/2d673076-3418-4ebd-83cd-64186f0c576a
 
-Sensor Fusion Depths
+## Sensor Fusion Depths Results
 https://github.com/raj-anadkat/DepthNav/assets/109377585/394d241e-7ef0-4e55-9da8-ba0f00f2536e
 
-Integrated Follow the Gap
+## Integrated Follow the Gap Results
 https://github.com/raj-anadkat/DepthNav/assets/109377585/cc9119b0-cb6e-416d-82ba-a42595abf4df
 
 
