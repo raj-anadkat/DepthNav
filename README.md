@@ -16,9 +16,9 @@ The sensor data is communicated through a chain of components. The sensor commun
 
 To ensure proper alignment and coverage, a 3D-printed mount is employed. The mount positions the rangefinders at fixed 18-degree increments, matching the FOV of the VL53L4CX. This arrangement guarantees comprehensive depth measurements across the entire FOV of the camera.
 <p float="left">
-<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/0601c4fa-09cd-4f08-b9a3-23abbe7bdc96"alt="ROI" width="400"/>
-<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/a3861afb-7ba1-4225-88f5-3d4731d49b5e"alt="ROI" width="400"/>
-<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/e8561d44-a122-41a9-b171-bfe877fd1d3b"alt="ROI" height="110"/>
+<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/0601c4fa-09cd-4f08-b9a3-23abbe7bdc96"alt="ROI" height="200"/>
+<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/a3861afb-7ba1-4225-88f5-3d4731d49b5e"alt="ROI" height="200"/>
+<img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/e8561d44-a122-41a9-b171-bfe877fd1d3b"alt="ROI" height="200"/>
  </p>
 By combining the low-cost and high-accuracy VL53L4CX sensor with an array of rangefinders, efficient data transmission via I2C and USB, and a well-designed 3D-printed mount, this sensor design provides a practical solution for achieving accurate depth perception within a fixed 18-degree FOV.
 
