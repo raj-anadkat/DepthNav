@@ -31,11 +31,13 @@ Stereo depth estimation relies on triangulating points between two cameras, whic
 By leveraging monocular depth estimation, developers and researchers can benefit from a more convenient and cost-effective solution that offers improved resolution, robustness to lighting changes, and broader applicability to different environments.
 
 ## Depth Models
-Initially, a custom UNet model with a 256x256x3 input size was trained on the NYU Depth V2 Dataset. Unfortunately, the accuracy of this model was found to be unsatisfactory. Additionally, it exhibited high temporal inconsistency during inference, but its performance on the Xavier NX platform was not tested.
+Initially, a custom UNet model ecompassing a pretrained VGG-16 encoder with a 256x256x3 input size was trained on the DIODE Dataset. Unfortunately, the accuracy of this model was found to be unsatisfactory. Additionally, it exhibited high temporal inconsistency during inference, but its performance on the Xavier NX platform was not tested.
+The model training code can be found in this [GitHub repository]: https://github.com/raj-anadkat/UNet-Monocular-Depth-Estimation
+
 
 Next, an alternative approach was attempted using a UNet with a pretrained Densenet 201 backbone model. This model achieved excellent accuracy, but the inference speed on the Jetson platform was only 4 frames per second (FPS). While the accuracy was desirable, the slow inference speed posed limitations for real-time applications.
 
-To address these concerns, the Midas v221 small model was tested, featuring a 256x256x3 input size. This model demonstrated moderate accuracy while being lightweight and efficient. Notably, on the Xavier NX platform, it achieved an impressive inference speed of 40 FPS. The resulting depth maps, generated using the Midas v2.1 small model, are displayed below.
+To address these concerns, the Midas v2.1 small model was tested, featuring a 256x256x3 input size. This model demonstrated moderate accuracy while being lightweight and efficient. Notably, on the Xavier NX platform, it achieved an impressive inference speed of 40 FPS. The resulting depth maps, generated using the Midas v2.1 small model, are displayed below.
 
 <p float="left">
 <img src= "https://github.com/raj-anadkat/DepthNav/assets/109377585/331a33c9-ebee-4176-a647-e59996d1bf35"alt="ROI" height="250"/>
