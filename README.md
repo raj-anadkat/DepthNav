@@ -32,7 +32,7 @@ By leveraging monocular depth estimation, developers and researchers can benefit
 
 ## Depth Models
 Initially, a custom UNet model ecompassing a pretrained VGG-16 encoder with a 256x256x3 input size was trained on the DIODE Dataset. Unfortunately, the accuracy of this model was found to be unsatisfactory. Additionally, it exhibited high temporal inconsistency during inference, but its performance on the Xavier NX platform was not tested.
-The model training code can be found in this [GitHub repository]: https://github.com/raj-anadkat/UNet-Monocular-Depth-Estimation
+The model training code can be found in this [GitHub repository](https://github.com/raj-anadkat/UNet-Monocular-Depth-Estimation)
 
 
 Next, an alternative approach was attempted using a UNet with a pretrained Densenet 201 backbone model. This model achieved excellent accuracy, but the inference speed on the Jetson platform was only 4 frames per second (FPS). While the accuracy was desirable, the slow inference speed posed limitations for real-time applications.
